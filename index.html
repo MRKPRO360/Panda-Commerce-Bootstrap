@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panda Commerce Website</title>
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <style>
+      .panda-bg-primary {
+        background-color: #fecae8;
+      }
+
+      .panda-btn-primary {
+        background-image: linear-gradient(to bottom, #ff589b, #ff1365);
+        color: #fff;
+        border-radius: 8px;
+        padding: 9px 25px;
+        border: 1px solid #fecae8;
+      }
+
+      .categories img {
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
     <header class="container">
       <!-- Nav -->
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar fixed-top navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./images/logo.png" alt="" class="img-fluid" />
@@ -32,13 +49,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Subscribe</a>
+                <a class="nav-link" href="#subscriber">Subscribe</a>
               </li>
             </ul>
           </div>
@@ -52,7 +69,7 @@
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner bg-primary p-5 border rounded">
+          <div class="carousel-inner panda-bg-primary p-5 border rounded">
             <div class="carousel-item active">
               <div class="row">
                 <div
@@ -151,12 +168,12 @@
 
     <main>
       <!-- Categories -->
-      <section>
-        <div class="container text-center my-5">
-          <div class="row g-3 text-white">
+      <section class="container categories">
+        <div class="text-center my-5">
+          <div class="row g-4 text-white">
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div
-                class="p-3 border bg-primary d-flex align-items-center justify-content-between border rounded-3"
+                class="p-3 border panda-bg-primary d-flex align-items-center justify-content-between border rounded-3"
               >
                 <h1>Watch</h1>
                 <img
@@ -168,7 +185,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div
-                class="p-3 border bg-primary d-flex align-items-center justify-content-between border rounded-3"
+                class="p-3 border panda-bg-primary d-flex align-items-center justify-content-between border rounded-3"
               >
                 <h1>Shoes</h1>
                 <img
@@ -181,7 +198,7 @@
 
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div
-                class="p-3 border bg-primary d-flex align-items-center justify-content-between border rounded-3"
+                class="p-3 border panda-bg-primary d-flex align-items-center justify-content-between border rounded-3"
               >
                 <h1>Watch</h1>
                 <img
@@ -196,7 +213,7 @@
       </section>
 
       <!-- Shoes -->
-      <section class="container my-5">
+      <section class="container my-5" id="shoes">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -216,7 +233,9 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-white">
-                <button class="btn btn-primary text-white">Buy Now >></button>
+                <button class="btn panda-btn-primary text-white">
+                  Buy Now >>
+                </button>
               </div>
             </div>
           </div>
@@ -236,7 +255,9 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-white">
-                <button class="btn btn-primary text-white">Buy Now >></button>
+                <button class="btn panda-btn-primary text-white">
+                  Buy Now >>
+                </button>
               </div>
             </div>
           </div>
@@ -257,7 +278,9 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-white">
-                <button class="btn btn-primary text-white">Buy Now >></button>
+                <button class="btn panda-btn-primary text-white">
+                  Buy Now >>
+                </button>
               </div>
             </div>
           </div>
@@ -266,7 +289,7 @@
 
       <!-- Bags -->
 
-      <section class="container my-5">
+      <section class="container my-5" id="backpack">
         <h2>Backpack</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -286,7 +309,9 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-white">
-                <button class="btn btn-primary text-white">Buy Now >></button>
+                <button class="btn panda-btn-primary text-white">
+                  Buy Now >>
+                </button>
               </div>
             </div>
           </div>
@@ -306,7 +331,9 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-white">
-                <button class="btn btn-primary text-white">Buy Now >></button>
+                <button class="btn panda-btn-primary text-white">
+                  Buy Now >>
+                </button>
               </div>
             </div>
           </div>
@@ -327,13 +354,48 @@
                 </p>
               </div>
               <div class="card-footer border-0 bg-white">
-                <button class="btn btn-primary text-white">Buy Now >></button>
+                <button class="btn panda-btn-primary text-white">
+                  Buy Now >>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Subscriber -->
+      <section class="container my-5" id="subscriber">
+        <div
+          style="height: 300px"
+          class="d-flex align-items-center justify-content-center panda-bg-primary rounded-3"
+        >
+          <div>
+            <h2>Let's stay in touch!</h2>
+            <p>Get updates on sales, specials and more</p>
+
+            <form>
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <button type="submit" class="btn panda-btn-primary">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="mt-5">
+      <p class="text-center">
+        <small>Copyright &copy; 2023 by Panda </small>
+      </p>
+    </footer>
 
     <script src="./bootstrap/bootstrap.min.js"></script>
   </body>
